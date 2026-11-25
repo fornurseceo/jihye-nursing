@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>지혜간호학원 | 합격을 만드는 간호전문 교육기관</title>
+  <meta name="description" content="보건복지부 간호조무사 교육훈련기관 지정평가기관, 지혜간호학원 전국 5개 지점. 수유·미아·청량리·송내·부산.">
+  <link rel="icon" href="assets/img/logo.png">
+  <!-- 글꼴: SUIT (무료 한글 글꼴) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2.0.5/fonts/variable/woff2/SUIT-Variable.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ 상단 메뉴 ============ -->
+  <header class="header" id="header">
+    <a class="brand" href="#top" aria-label="지혜간호학원 처음으로">
+      <img src="assets/img/logo.png" alt="" width="40" height="40">
+      <span class="brand-text">
+        <strong>지혜간호학원</strong>
+        <small>전국 5개 지점</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#branches">지점 안내</a>
+      <a href="#strengths">교육 특징</a>
+      <a href="#reviews">합격 후기</a>
+      <a href="#contact">상담 문의</a>
+    </nav>
+    <a class="btn btn-solid header-cta" href="#contact">무료 상담</a>
+    <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span>
+    </button>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="모바일 메뉴" hidden>
+    <a href="#branches">지점 안내</a>
+    <a href="#strengths">교육 특징</a>
+    <a href="#reviews">합격 후기</a>
+    <a href="#contact">상담 문의</a>
+    <a class="btn btn-solid" href="#contact">무료 상담 신청</a>
+  </nav>
+
+  <main id="top">
+
+    <!-- ============ 1. 첫 화면 (배경 영상 + 흰 반투명 막) ============ -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-media" aria-hidden="true">
+        <!-- 영상이 없을 때 보이는 사진 (천천히 확대됨) -->
+        <div class="hero-photo" style="background-image:url('assets/img/hero-poster.jpg')"></div>
+        <!-- 배경 영상: assets/video/hero.mp4 파일을 넣으면 자동으로 재생돼요 -->
+        <video class="hero-video" muted loop playsinline preload="metadata"
+               data-src="assets/video/hero.mp4" poster="assets/img/hero-poster.jpg"></video>
+        <div class="hero-veil"></div>
+      </div>
+
+      <div class="hero-inner">
+        <!-- 첫 화면 3줄: 위 작은 줄 / 큰 제목 / 아래 작은 줄 -->
+        <p class="hero-eyebrow">
+          <img src="assets/img/moe-logo.png" alt="보건복지부" width="32" height="32">
+          보건복지부 간호조무사 교육훈련기관 지정평가기관
+        </p>
+        <h1 class="hero-title" id="heroTitle">
+          저희는 전국 <em>최고의</em> 합격률로 <span class="nowrap">설명드립니다.</span>
+        </h1>
+        <p class="hero-lead"><span class="nowrap">전국 5개 지점 운영</span><span class="sep" aria-hidden="true">/</span><span class="nowrap">20년 강사 출신 강사진</span></p>      </div>
+
+      <!-- 지점 노선도: 점을 누르면 지점 안내로 이동 -->
+      <div class="route" aria-label="전국 5개 지점">
+        <ol class="route-stops">
+          <li><a href="#branch-suyu"><span class="dot l4" role="img" aria-label="4호선">4</span><b>수유</b><small>서울 강북구</small></a></li>
+          <li><a href="#branch-mia"><span class="dot l4" role="img" aria-label="4호선">4</span><b>미아</b><small>4호선 인근</small></a></li>
+          <li><a href="#branch-cheongnyangni"><span class="dot l1" role="img" aria-label="1호선">1</span><b>청량리</b><small>KTX·GTX 인근</small></a></li>
+          <li><a href="#branch-songnae"><span class="dot l1" role="img" aria-label="1호선">1</span><b>송내</b><small>1호선 인근</small></a></li>
+          <li><a href="#branch-busan"><span class="dot lb1" role="img" aria-label="부산 1호선">1</span><b>부산</b><small>부산진구</small></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 1-2. 숫자 + 강점 (기존 첫 화면 내용) ============ -->
+    <section class="proof" id="strengths" aria-label="지혜간호학원 강점">
+      <dl class="stats">
+        <div><dt>평균 합격률</dt><dd><span class="count" data-from="1" data-to="98" data-dur="1100">98</span>%</dd></div>
+        <div><dt>전국 지점</dt><dd><span class="count" data-to="5">5</span>개</dd></div>
+        <div><dt>교육 경력</dt><dd><span class="count" data-to="20">20</span>년+</dd></div>
+        <div><dt>누적 합격생</dt><dd><span class="count" data-to="15000">15,000</span>+</dd></div>
+      </dl>
+
+      <div class="strengths">
+        <!-- 부엉이 마스코트: 열쇠만 여기 있고, 부엉이(.owl-flyer, 페이지 맨 아래)가
+             첫 화면 노선도의 역 5개를 지나 날아와서 이 열쇠 위에 앉음 -->
+        <div class="owl" role="img" aria-label="지혜간호학원 부엉이 마스코트">
+          <img class="owl-key" src="assets/img/owl-key.png" alt="" width="240" height="240">
+        </div>
+        <ul class="strength-list">
+          <li>
+            <h3>전국 최고 합격률</h3>
+            <p>매 시험 평균 98%, 수강생의 꿈을 현실로 만듭니다.</p>
+          </li>
+          <li>
+            <h3>추가 자격증 혜택</h3>
+            <p>(주)국민평생학습센터 제휴로<br>업계 최저가에 추가 자격증을 취득할 수 있습니다.</p>
+          </li>
+          <li>
+            <h3>청량리점, KTX·GTX 인근</h3>
+            <p>동북권 교통 요지라 강원·경기북부에서도 통학이 편리합니다.</p>
+          </li>
+          <li>
+            <h3>합격 후 취업 연계</h3>
+            <p>전국 300여 개 의료기관과 취업을 연계합니다.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 2. 제휴 기관 띠 ============ -->
+    <section class="partner" aria-label="제휴 기관">
+      <p><strong>(주)국민평생학습센터 공식 제휴</strong>
+        간병사, 병원동행매니저, 병원코디네이터, 산후관리사, 베이비시터, 심리상담사 추가 자격증을 업계 최저가로 준비할 수 있습니다.</p>
+    </section>
+
+    <!-- ============ 3. 가까운 지점을 선택하세요 (지점별 직통전화 + 지점 안내 합침) ============
+         처음엔 지점 이름·전화번호만 보이고, 줄을 누르면 자세한 내용이 펼쳐져요.
+         지점 추가·수정: <li class="branch"> 한 덩어리를 복사해서 글자만 바꾸면 돼요.
+         - 전화번호는 href="tel:…" 와 화면 글자 두 곳을 같이 바꾸세요.
+         - id(branch-suyu 등)와 aria-controls/id(bd-suyu 등)는 지점마다 달라야 해요.
+         - 홈페이지 버튼 링크는 지점 폴더(suyu/ 등). 지점 홈페이지는 아직 없어서 지금 누르면 '페이지 없음'.
+         - 문장 안 <br class="pc"> 는 넓은 화면에서만 줄을 바꿔요. -->
+    <section class="branches" id="branches" aria-labelledby="branchesTitle">
+      <div class="branches-head">
+        <h2 id="branchesTitle">가까운 지점을 선택하세요</h2>
+        <p>지점을 누르면 소개와 상담 정보가 펼쳐집니다. 전화번호를 누르면 바로 연결됩니다.</p>
+      </div>
+
+      <ul class="branch-list">
+        <li class="branch" id="branch-suyu">
+          <div class="branch-head">
+            <button class="branch-toggle" type="button" aria-expanded="false" aria-controls="bd-suyu">
+              <span class="branch-region">서울 강북구</span>
+              <span class="branch-name">수유점</span>
+              <span class="branch-icon" aria-hidden="true"></span>
+            </button>
+            <a class="branch-tel" href="tel:070-4680-5511">070-4680-5511</a>
+          </div>
+          <div class="branch-body" id="bd-suyu"><div class="branch-inner">
+            <div class="branch-about">
+              <p class="branch-desc">실습 중심 교육으로 현장 적응력을 높입니다.<br class="pc">
+                최신 의료 장비를 갖춘 전문 실습실에서<br class="pc">
+                이론과 실기를 완벽하게 익힐 수 있습니다.</p>
+              <p class="branch-points">합격률 97% <i>/</i> 최신 실습실 <i>/</i> 맞춤 교육</p>
+            </div>
+            <dl class="branch-info">
+              <div><dt>카톡 ID</dt><dd>@지혜간호학원수유</dd></div>
+              <div><dt>상담시간</dt><dd>09:00~22:00</dd></div>
+            </dl>
+            <div class="branch-actions">
+              <a class="branch-site" href="suyu/">수유점 홈페이지 바로가기</a>
+              <!-- 카톡 문의: 기존 지점 홈페이지에 있던 지점별 오픈채팅 -->
+              <a class="branch-kakao" href="https://open.kakao.com/o/jihyesuyu" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.5 2 10.8c0 2.8 1.9 5.2 4.7 6.6l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.5 10-7.9S17.5 3 12 3z"/></svg>카카오톡으로 바로 문의하기</a>
+            </div>
+          </div></div>
+        </li>
+
+        <li class="branch" id="branch-mia">
+          <div class="branch-head">
+            <button class="branch-toggle" type="button" aria-expanded="false" aria-controls="bd-mia">
+              <span class="branch-region">서울 강북구</span>
+              <span class="branch-name">미아점</span>
+              <span class="branch-icon" aria-hidden="true"></span>
+            </button>
+            <a class="branch-tel" href="tel:02-980-1005">02-980-1005</a>
+          </div>
+          <div class="branch-body" id="bd-mia"><div class="branch-inner">
+            <div class="branch-about">
+              <p class="branch-desc">강북 지역 대표 간호학원입니다.<br class="pc">
+                20년 이상의 역사와 맞춤 교육으로<br class="pc">
+                최고의 합격률을 달성합니다.</p>
+              <p class="branch-points">합격률 98% <i>/</i> 최신 의료 장비 보유 <i>/</i> 4호선 인근</p>
+            </div>
+            <dl class="branch-info">
+              <div><dt>카톡 ID</dt><dd>@지혜간호학원미아</dd></div>
+              <div><dt>상담시간</dt><dd>10:00~22:00</dd></div>
+            </dl>
+            <div class="branch-actions">
+              <a class="branch-site" href="mia/">미아점 홈페이지 바로가기</a>
+              <!-- 카톡 문의: 기존 지점 홈페이지에 있던 지점별 오픈채팅 -->
+              <a class="branch-kakao" href="https://open.kakao.com/o/jihyemia" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.5 2 10.8c0 2.8 1.9 5.2 4.7 6.6l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.5 10-7.9S17.5 3 12 3z"/></svg>카카오톡으로 바로 문의하기</a>
+            </div>
+          </div></div>
+        </li>
+
+        <li class="branch" id="branch-cheongnyangni">
+          <div class="branch-head">
+            <button class="branch-toggle" type="button" aria-expanded="false" aria-controls="bd-cheongnyangni">
+              <span class="branch-region">서울 동대문구</span>
+              <span class="branch-name">청량리점</span>
+              <span class="branch-icon" aria-hidden="true"></span>
+            </button>
+            <a class="branch-tel" href="tel:02-6014-3819">02-6014-3819</a>
+          </div>
+          <div class="branch-body" id="bd-cheongnyangni"><div class="branch-inner">
+            <div class="branch-about">
+              <p class="branch-desc">KTX·GTX 등 6개 노선이 지나는<br class="pc">
+                동북권 교통 요지입니다.<br class="pc">
+                (주)국민평생학습센터 제휴로<br class="pc">
+                추가 자격증 혜택을 제공합니다.</p>
+              <p class="branch-points">실습 연계 및 취업 안내 <i>/</i> 추가 자격증 혜택</p>
+            </div>
+            <dl class="branch-info">
+              <div><dt>카톡 ID</dt><dd>@지혜간호학원청량리</dd></div>
+              <div><dt>상담시간</dt><dd>평일 09:00~22:00</dd></div>
+            </dl>
+            <div class="branch-actions">
+              <a class="branch-site" href="cheongnyangni/">청량리점 홈페이지 바로가기</a>
+              <!-- 카톡 문의: 기존 지점 홈페이지에 있던 지점별 오픈채팅 -->
+              <a class="branch-kakao" href="https://open.kakao.com/o/jihyecheong" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.5 2 10.8c0 2.8 1.9 5.2 4.7 6.6l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.5 10-7.9S17.5 3 12 3z"/></svg>카카오톡으로 바로 문의하기</a>
+            </div>
+          </div></div>
+        </li>
+
+        <li class="branch" id="branch-busan">
+          <div class="branch-head">
+            <button class="branch-toggle" type="button" aria-expanded="false" aria-controls="bd-busan">
+              <span class="branch-region">부산 부산진구</span>
+              <span class="branch-name">부산점</span>
+              <span class="branch-icon" aria-hidden="true"></span>
+            </button>
+            <a class="branch-tel" href="tel:070-8657-4474">070-8657-4474</a>
+          </div>
+          <div class="branch-body" id="bd-busan"><div class="branch-inner">
+            <div class="branch-about">
+              <p class="branch-desc">부산·경남권 대표 지점입니다.<br class="pc">
+                부산 지역 의료기관과 긴밀히 연계하여<br class="pc">
+                실습과 취업을 적극 지원합니다.</p>
+              <p class="branch-points">합격률 96% <i>/</i> 병원 실습 <i>/</i> 취업 보장</p>
+            </div>
+            <dl class="branch-info">
+              <div><dt>카톡 ID</dt><dd>@지혜간호학원부산</dd></div>
+              <div><dt>상담시간</dt><dd>10:00~22:00</dd></div>
+            </dl>
+            <div class="branch-actions">
+              <a class="branch-site" href="busan/">부산점 홈페이지 바로가기</a>
+              <!-- 카톡 문의: 기존 지점 홈페이지에 있던 지점별 오픈채팅 -->
+              <a class="branch-kakao" href="https://open.kakao.com/o/jihyebusan" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.5 2 10.8c0 2.8 1.9 5.2 4.7 6.6l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.5 10-7.9S17.5 3 12 3z"/></svg>카카오톡으로 바로 문의하기</a>
+            </div>
+          </div></div>
+        </li>
+
+        <li class="branch" id="branch-songnae">
+          <div class="branch-head">
+            <button class="branch-toggle" type="button" aria-expanded="false" aria-controls="bd-songnae">
+              <span class="branch-region">경기 부천시</span>
+              <span class="branch-name">송내점</span>
+              <span class="branch-icon" aria-hidden="true"></span>
+            </button>
+            <a class="branch-tel" href="tel:032-322-9344">032-322-9344</a>
+          </div>
+          <div class="branch-body" id="bd-songnae"><div class="branch-inner">
+            <div class="branch-about">
+              <p class="branch-desc">부천·인천·경기 서부권 대표 지점입니다.<br class="pc">
+                1호선 송내역 인근의 쾌적한 환경과<br class="pc">
+                검증된 커리큘럼으로 경기 서부<br class="pc">
+                합격률 1위를 기록하고 있습니다.</p>
+              <p class="branch-points">합격률 98% <i>/</i> 1호선 인근 <i>/</i> 경기 서부 1위</p>
+            </div>
+            <dl class="branch-info">
+              <div><dt>카톡 ID</dt><dd>@지혜간호학원송내</dd></div>
+              <div><dt>상담시간</dt><dd>10:00~22:00</dd></div>
+            </dl>
+            <div class="branch-actions">
+              <a class="branch-site" href="songnae/">송내점 홈페이지 바로가기</a>
+              <!-- 카톡 문의: 기존 지점 홈페이지에 있던 지점별 오픈채팅 -->
+              <a class="branch-kakao" href="https://open.kakao.com/o/songnae" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.5 2 10.8c0 2.8 1.9 5.2 4.7 6.6l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.5 10-7.9S17.5 3 12 3z"/></svg>카카오톡으로 바로 문의하기</a>
+            </div>
+          </div></div>
+        </li>
+
+        <!-- 온라인 학습 플랫폼 (지점 아님, 전화번호 대신 바로가기만) -->
+        <li class="branch branch--online" id="branch-enursing">
+          <div class="branch-head">
+            <button class="branch-toggle" type="button" aria-expanded="false" aria-controls="bd-enursing">
+              <span class="branch-region">간호교육 플랫폼</span>
+              <span class="branch-name">이널싱 <small>E-nursing</small></span>
+              <span class="branch-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="branch-body" id="bd-enursing"><div class="branch-inner">
+            <div class="branch-about">
+              <p class="branch-desc">CBT 실전훈련부터 간호조무사 국시특강,<br class="pc">
+                모의고사까지 합격을 위한 온라인 학습을<br class="pc">
+                한 번에 준비할 수 있습니다.</p>
+              <p class="branch-points">CBT 실전훈련 <i>/</i> 국시특강 <i>/</i> 모의고사</p>
+            </div>
+            <div class="branch-info" aria-hidden="true"></div>
+            <a class="branch-site" href="https://www.fornurse.kr/" target="_blank" rel="noopener">이널싱 바로가기</a>
+            <!-- 이널싱 배너: 강의(이널싱 강의 페이지) + 교재(네이버 스마트스토어), 모두 새 창.
+                 배너 추가는 <a> 덩어리 하나 복사해서 그림·링크만 바꾸기 -->
+            <div class="branch-ads">
+              <p class="branch-ads-title">강의</p>
+              <a href="https://www.fornurse.kr/course/course_view.jsp?id=205061&amp;cid=117753#course-view-205061" target="_blank" rel="noopener">
+                <img src="assets/img/enursing-final-note.jpg" alt="이널싱 강의: 파이널 찰떡 족집게 노트, 기초간호 2시간 완성 프로젝트. 지금 바로 수강" width="1920" height="400" loading="lazy">
+              </a>
+              <a href="https://www.fornurse.kr/course/course_view.jsp?id=198763&amp;cid=117758#course-view-198763" target="_blank" rel="noopener">
+                <img src="assets/img/enursing-cbt.jpg" alt="이널싱 강의: 2026 하반기 국시대비 간호조무사 CBT 20회 패키지" width="1920" height="400" loading="lazy">
+              </a>
+              <p class="branch-ads-title">교재 구매</p>
+              <a href="https://smartstore.naver.com/fornursebook/products/13657075365" target="_blank" rel="noopener">
+                <img src="assets/img/book-chaltteok.jpg" alt="교재 구매: 간호조무사 국가시험 찰떡 요약집 2권 세트. 자세히 보기" width="1920" height="400" loading="lazy">
+              </a>
+              <a href="https://smartstore.naver.com/fornursebook/products/13513513757" target="_blank" rel="noopener">
+                <img src="assets/img/book-ildan.jpg" alt="교재 구매: 지혜간호학원 편집부 자체제작 교재, 간호조무사 국가시험 일단합격 문제집. 실전 모의고사 2,000문항 수록" width="1920" height="400" loading="lazy">
+              </a>
+            </div>
+          </div></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ 5. 국비지원 안내 (내일배움카드) ============ -->
+    <section class="support" id="support" aria-labelledby="supportTitle">
+      <div class="support-inner">
+        <figure class="support-figure">
+          <img src="assets/img/card-support.jpg" alt="취업의 시작, 내일배움카드로 준비하세요. 직업훈련비 국가 지원, 다양한 교육 기회 제공, 취업 역량 강화 지원" width="1536" height="1024" loading="lazy">
+        </figure>
+        <div class="support-copy">
+          <p class="section-label">국비지원 안내</p>
+          <h2 id="supportTitle">내일배움카드로<br>간호조무사 과정을 준비하세요</h2>
+          <p class="support-desc">취업을 준비하는 분들을 위해 직업훈련비를 지원하는 제도입니다.<br class="pc">
+            수강 전 꼭 확인해야 할 핵심 내용을 정리했습니다.</p>
+          <dl class="support-qa">
+            <div>
+              <dt><span class="qa-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span>내일배움카드제(구직자)란?</dt>
+              <dd>취업하고자 하는 구직자들의 직업훈련을 위해 훈련비를 국가에서 지원해 주는 제도입니다.</dd>
+            </div>
+            <div>
+              <dt><span class="qa-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg></span>누가 신청할 수 있나요?</dt>
+              <dd>취업하고자 하는 구직자, 주 15시간 미만 근로자, 고용보험 피보험자격 미취득자, 영세자영업자 등이 신청할 수 있습니다.</dd>
+            </div>
+            <div>
+              <dt><span class="qa-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="9" width="17" height="11" rx="1.5"/><path d="M2.5 9h19v3.5h-19zM12 9v11"/><path d="M12 9c-1.5-3.5-6-4-6-1.5S10 9 12 9zM12 9c1.5-3.5 6-4 6-1.5S14 9 12 9z"/></svg></span>어떤 혜택이 있나요?</dt>
+              <dd>훈련비 지원과 함께 일정 요건 충족 시 훈련장려금까지 지원받을 수 있습니다.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. 시험과목 ============
+         '시험일정 바로보기'는 아래 시험일정 그림(assets/img/exam-schedule.jpg)을 팝업으로 보여줘요.
+         일정이 바뀌면 그 그림 파일만 새 것으로 바꾸면 돼요. -->
+    <section class="exam" id="exam" aria-labelledby="examTitle">
+      <div class="exam-inner">
+        <div class="exam-copy">
+          <p class="exam-label">간호조무사 국가시험</p>
+          <h2 id="examTitle">시험과목</h2>
+          <p class="exam-desc">간호조무사 국가시험 합격을 위해 반드시 학습해야 할<br class="pc">
+            4개의 과목을 체계적인 커리큘럼으로 제공합니다.</p>
+          <ul class="exam-points">
+            <li>핵심이론과 실무 중심 교육</li>
+            <li>출제경향을 반영한 체계적 학습</li>
+            <li>합격을 위한 맞춤형 커리큘럼</li>
+          </ul>
+          <div class="exam-actions">
+            <button class="exam-btn exam-btn--solid" type="button" data-dialog-open="examDialog">시험일정 바로보기</button>
+            <a class="exam-btn exam-btn--line" href="https://www.kuksiwon.or.kr/ss/center/centerList.do?seq=8" target="_blank" rel="noopener">시험장소 바로가기</a>
+          </div>
+        </div>
+
+        <ul class="exam-subjects" aria-label="간호조무사 국가시험 4과목">
+          <li>
+            <span class="exam-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5.5h6a3 3 0 0 1 3 3V20a2.5 2.5 0 0 0-2.5-2.5H3z"/><path d="M21 5.5h-6a3 3 0 0 0-3 3V20a2.5 2.5 0 0 1 2.5-2.5H21z"/></svg></span>
+            <div><h3>기초간호학</h3><p>기본 간호 지식과 간호기술의 이해</p></div>
+          </li>
+          <li>
+            <span class="exam-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 9a5 5 0 0 0-8.5-3.5A5 5 0 0 0 3.5 9c0 5.5 8.5 11 8.5 11s8.5-5.5 8.5-11z"/><path d="M5 12h3.5l1.5-2.5 2.5 5 1.5-2.5H19"/></svg></span>
+            <div><h3>보건간호학</h3><p>지역사회 보건간호 및 건강관리</p></div>
+          </li>
+          <li>
+            <span class="exam-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 9v6M9 12h6"/></svg></span>
+            <div><h3>공중보건학</h3><p>공중보건 개념 및 보건행정 이해</p></div>
+          </li>
+          <li>
+            <span class="exam-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 3.5h6v3H9zM8.5 11h7M8.5 15h4.5"/></svg></span>
+            <div><h3>병원간호 실기학</h3><p>병원 실무 중심의 간호 실습</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <dialog class="exam-dialog" id="examDialog" aria-labelledby="examDialogTitle">
+        <div class="exam-dialog-head">
+          <h3 id="examDialogTitle">간호조무사 국가시험 일정</h3>
+          <button type="button" data-dialog-close aria-label="닫기">닫기</button>
+        </div>
+        <div class="exam-dialog-body">
+          <img src="assets/img/exam-schedule.jpg" alt="간호조무사 국가시험 일정, 시험과목, 시험시간표, 합격기준 안내표" loading="lazy" width="1080" height="2198">
+        </div>
+      </dialog>
+    </section>
+
+    <!-- ============ 8. 실습 협력 의료기관 (practice-start) ============
+         병원급·의원급 로고. 로고 그림은 assets/img/hospitals/ 에 있어요.
+         병원 추가: <li> 한 줄 복사해서 그림 파일·이름·홈페이지 주소만 바꾸기.
+         처음엔 앞의 3줄만 보이고 '전체 보기'를 누르면 다 보여요. -->
+    <section class="practice" id="practice" aria-labelledby="practiceTitle">
+      <div class="practice-head">
+        <div>
+          <h2 id="practiceTitle">신뢰받는 실습 협력 의료기관</h2>
+          <p>전국의 다양한 병원 및 의원과 함께 실습 교육의 품질을 높이고 있습니다.<br class="pc">
+            병원급 로고를 누르면 병원 홈페이지에서 병원을 둘러볼 수 있습니다.</p>
+        </div>
+        <!-- 숫자는 병원급+의원급 개수(자동 계산). 보일 때마다 1부터 올라감 -->
+        <p class="practice-total"><span class="practice-total-label">협력 의료기관</span>
+          <span class="practice-total-num"><span class="count" data-from="1" data-to="102" data-dur="1300">102</span>개</span></p>
+      </div>
+
+      <div class="practice-tabs" role="tablist" aria-label="의료기관 종류">
+        <button class="practice-tab" type="button" role="tab" id="tab-hospital" aria-controls="panel-hospital" aria-selected="true">병원급 <span>43</span></button>
+        <button class="practice-tab" type="button" role="tab" id="tab-clinic" aria-controls="panel-clinic" aria-selected="false" tabindex="-1">의원급 <span>59</span></button>
+      </div>
+
+      <div class="practice-panel" id="panel-hospital" role="tabpanel" aria-labelledby="tab-hospital">
+        <ul class="logo-grid">
+            <li><a class="logo-tile" href="https://www.123stepup.com/" target="_blank" rel="noopener" title="123스텝업병원 홈페이지"><img src="assets/img/hospitals/hosp-01.jpg" alt="123스텝업병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.365maeil.com/" target="_blank" rel="noopener" title="365매일한방병원 홈페이지"><img src="assets/img/hospitals/hosp-02.jpg" alt="365매일한방병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.ysloves.com/" target="_blank" rel="noopener" title="강북연세병원 홈페이지"><img src="assets/img/hospitals/hosp-03.jpg" alt="강북연세병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://eutteumhospital.com/" target="_blank" rel="noopener" title="강북으뜸병원 홈페이지"><img src="assets/img/hospitals/hosp-04.jpg" alt="강북으뜸병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://365bulls.co.kr/" target="_blank" rel="noopener" title="경희황소한방병원 홈페이지"><img src="assets/img/hospitals/hosp-05.jpg" alt="경희황소한방병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://daehanh.com/" target="_blank" rel="noopener" title="대한병원 홈페이지"><img src="assets/img/hospitals/hosp-06.jpg" alt="대한병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://hanchangbone.com/" target="_blank" rel="noopener" title="마포척한방병원 홈페이지"><img src="assets/img/hospitals/hosp-07.jpg" alt="마포척한방병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.barosun.com/" target="_blank" rel="noopener" title="바로선병원 홈페이지"><img src="assets/img/hospitals/hosp-08.jpg" alt="바로선병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://barrrjung-hospital.co.kr/" target="_blank" rel="noopener" title="바를정한방병원 홈페이지"><img src="assets/img/hospitals/hosp-09.jpg" alt="바를정한방병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.symcs.co.kr/" target="_blank" rel="noopener" title="삼육서울병원 홈페이지"><img src="assets/img/hospitals/hosp-10.jpg" alt="삼육서울병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.NOVOS.KR/" target="_blank" rel="noopener" title="서울노보스병원 홈페이지"><img src="assets/img/hospitals/hosp-11.jpg" alt="서울노보스병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.noh-hospital.com/" target="_blank" rel="noopener" title="서울라본병원 홈페이지"><img src="assets/img/hospitals/hosp-12.jpg" alt="서울라본병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://blog.naver.com/dkomsky" target="_blank" rel="noopener" title="서울미르한방병원 홈페이지"><img src="assets/img/hospitals/hosp-13.jpg" alt="서울미르한방병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://SCDH.kr/" target="_blank" rel="noopener" title="서울센트리얼치과병원 홈페이지"><img src="assets/img/hospitals/hosp-14.jpg" alt="서울센트리얼치과병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.acemedi.com/" target="_blank" rel="noopener" title="서울에이스요양병원 홈페이지"><img src="assets/img/hospitals/hosp-15.jpg" alt="서울에이스요양병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.seouluhospital.com" target="_blank" rel="noopener" title="서울유병원 홈페이지"><img src="assets/img/hospitals/hosp-16.jpg" alt="서울유병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.seoulchuk.com/" target="_blank" rel="noopener" title="서울척병원 홈페이지"><img src="assets/img/hospitals/hosp-17.jpg" alt="서울척병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.sbhosp.co.kr/" target="_blank" rel="noopener" title="성북서울요양병원 홈페이지"><img src="assets/img/hospitals/hosp-18.jpg" alt="성북서울요양병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://sb.woorisoa.co.kr/" target="_blank" rel="noopener" title="성북우리아이들병원 홈페이지"><img src="assets/img/hospitals/hosp-19.jpg" alt="성북우리아이들병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://solasido.co.kr" target="_blank" rel="noopener" title="솔라시도한방병원 홈페이지"><img src="assets/img/hospitals/hosp-20.jpg" alt="솔라시도한방병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.shinilh.co.kr/" target="_blank" rel="noopener" title="신일병원 홈페이지"><img src="assets/img/hospitals/hosp-21.png" alt="신일병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.hcube.kr" target="_blank" rel="noopener" title="에이치큐브병원 홈페이지"><img src="assets/img/hospitals/hosp-22.jpg" alt="에이치큐브병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.bucheon-yonserang.com" target="_blank" rel="noopener" title="연세본사랑병원 홈페이지"><img src="assets/img/hospitals/hosp-23.jpg" alt="연세본사랑병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.ydpbom-hosp.com/" target="_blank" rel="noopener" title="영등포봄한방병원 홈페이지"><img src="assets/img/hospitals/hosp-24.jpg" alt="영등포봄한방병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.onnurihosp.com/" target="_blank" rel="noopener" title="온누리병원 홈페이지"><img src="assets/img/hospitals/hosp-25.jpg" alt="온누리병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://ujb.seoulchuk.com/main.do" target="_blank" rel="noopener" title="의정부서울척병원 홈페이지"><img src="assets/img/hospitals/hosp-26.jpg" alt="의정부서울척병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.jeinmedi.com/" target="_blank" rel="noopener" title="제인병원 홈페이지"><img src="assets/img/hospitals/hosp-27.jpg" alt="제인병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.osanhospital.com" target="_blank" rel="noopener" title="조은오산병원 홈페이지"><img src="assets/img/hospitals/hosp-28.jpg" alt="조은오산병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.jointh.co.kr/" target="_blank" rel="noopener" title="조인트힐병원 홈페이지"><img src="assets/img/hospitals/hosp-29.jpg" alt="조인트힐병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://chambaro.co.kr/" target="_blank" rel="noopener" title="참바로병원 홈페이지"><img src="assets/img/hospitals/hosp-30.jpg" alt="참바로병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.korea-h.co.kr/" target="_blank" rel="noopener" title="코리아병원 홈페이지"><img src="assets/img/hospitals/hosp-31.jpg" alt="코리아병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.88h.kr/" target="_blank" rel="noopener" title="팔팔요양병원 홈페이지"><img src="assets/img/hospitals/hosp-32.jpg" alt="팔팔요양병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://foresthospital.co.kr/" target="_blank" rel="noopener" title="포레스트병원 홈페이지"><img src="assets/img/hospitals/hosp-33.jpg" alt="포레스트병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.hangaonhani.com/" target="_blank" rel="noopener" title="한가온병원 홈페이지"><img src="assets/img/hospitals/hosp-34.jpg" alt="한가온병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://minhospital.co.kr/" target="_blank" rel="noopener" title="민병원 홈페이지"><img src="assets/img/hospitals/hosp-35.jpg" alt="민병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.hangileye.co.kr/" target="_blank" rel="noopener" title="한길안과병원 홈페이지"><img src="assets/img/hospitals/hosp-36.jpg" alt="한길안과병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://hanmaums.com" target="_blank" rel="noopener" title="한마음한방병원 홈페이지"><img src="assets/img/hospitals/hosp-37.jpg" alt="한마음한방병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.hanilmed.net/" target="_blank" rel="noopener" title="한일병원 홈페이지"><img src="assets/img/hospitals/hosp-38.jpg" alt="한일병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.hatvit.co.kr/" target="_blank" rel="noopener" title="햇빛병원 홈페이지"><img src="assets/img/hospitals/hosp-39.jpg" alt="햇빛병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.hdgh.co.kr/" target="_blank" rel="noopener" title="현대병원 홈페이지"><img src="assets/img/hospitals/hosp-40.jpg" alt="현대병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="http://www.hih.or.kr" target="_blank" rel="noopener" title="홍익병원 홈페이지"><img src="assets/img/hospitals/hosp-41.jpg" alt="홍익병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.himchanhospital.com/" target="_blank" rel="noopener" title="힘찬병원 홈페이지"><img src="assets/img/hospitals/hosp-42.jpg" alt="힘찬병원" loading="lazy"></a></li>
+            <li><a class="logo-tile" href="https://www.seoulhyundai.co.kr/" target="_blank" rel="noopener" title="서울현대병원 홈페이지"><img src="assets/img/hospitals/hosp-43.png" alt="서울현대병원" loading="lazy"></a></li>
+        </ul>
+        <button class="practice-more" type="button" aria-expanded="false">병원급 전체 보기</button>
+      </div>
+      <div class="practice-panel" id="panel-clinic" role="tabpanel" aria-labelledby="tab-clinic" hidden>
+        <ul class="logo-grid">
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-01.jpg" alt="강남밝은안과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-02.jpg" alt="강남에이스안과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-03.jpg" alt="유앤아이" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-04.jpg" alt="고침한의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-05.jpg" alt="광덕안정 한의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-06.jpg" alt="베스트내과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-07.jpg" alt="그리니피부과의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-08.jpg" alt="김송이클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-09.jpg" alt="김용철 마취통증의학과의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-10.jpg" alt="김지영 산부인과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-11.jpg" alt="노원 영상의학과·내과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-12.jpg" alt="뉴라인의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-13.jpg" alt="다시온클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-14.jpg" alt="닥터스피부과 서판교점" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-15.jpg" alt="더꼼꼼한치과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-16.jpg" alt="데카비 클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-17.jpg" alt="동서제일의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-18.jpg" alt="드림성형외과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-19.jpg" alt="디알성형외과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-20.jpg" alt="디앤에이피부과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-21.jpg" alt="라민 클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-22.jpg" alt="루트여성의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-23.jpg" alt="마포공덕 튼튼본정형외과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-24.jpg" alt="모앤블레스 클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-25.jpg" alt="모차르트 성형외과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-26.jpg" alt="의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-27.jpg" alt="미소천사 치과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-28.jpg" alt="본라인 한의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-29.jpg" alt="비안채한의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-30.jpg" alt="삼모라인내과의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-31.jpg" alt="새튼 재활의학과의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-32.jpg" alt="서강플러스치과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-33.jpg" alt="밝은세상안과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-34.jpg" alt="서울삼성안과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-35.jpg" alt="서울성모이비인후과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-36.jpg" alt="서울마취통증의학과의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-37.jpg" alt="셀린 클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-38.jpg" alt="소나무한의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-39.jpg" alt="스마일100치과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-40.jpg" alt="스키니크 클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-41.jpg" alt="아비쥬" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-42.jpg" alt="아쥬르의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-43.jpg" alt="톤즈 클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-44.jpg" alt="어깨동무한의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-45.jpg" alt="에스메디센터" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-46.jpg" alt="88에어리어 성형외과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-47.jpg" alt="엘앤에스의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-48.jpg" alt="에이엠레드 클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-49.jpg" alt="연세윤내과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-50.jpg" alt="온아치과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-51.jpg" alt="우리베스트내과의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-52.jpg" alt="일타한의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-53.jpg" alt="제이디토탈뷰티클리닉" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-54.jpg" alt="청담베스트내과" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-55.jpg" alt="플러스마이너스" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-56.jpg" alt="필한의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-57.jpg" alt="한치과의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-58.jpg" alt="허니의원" loading="lazy"></span></li>
+            <li><span class="logo-tile"><img src="assets/img/hospitals/clinic-59.jpg" alt="화평치과의원" loading="lazy"></span></li>
+        </ul>
+        <button class="practice-more" type="button" aria-expanded="false">의원급 전체 보기</button>
+      </div>
+
+      <p class="practice-note">전국의 우수한 의료기관과 함께, 간호 전문인재 양성에 최선을 다하겠습니다.</p>
+    </section>
+    <!-- (practice-end) -->
+
+    <!-- ============ 9. 합격 후기 ============
+         후기 추가: <li class="review"> 한 덩어리 복사해서 글·이름·지점만 바꾸기.
+         후기 문장은 수강생 말투 그대로 둠. -->
+    <section class="reviews" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="reviews-head">
+        <p class="section-label">합격 후기</p>
+        <h2 id="reviewsTitle">수강생들의 생생한 합격 스토리</h2>
+        <p>지혜간호학원을 통해 꿈을 이룬 수강생들의 실제 후기입니다.</p>
+      </div>
+      <ul class="review-list">
+        <li class="review">
+          <p class="review-stars" aria-label="별점 5점">★★★★★</p>
+          <blockquote>육아와 병행하며 힘들었는데 선생님들이 세심하게 케어해주셔서 합격할 수 있었어요. 실습 수업이 특히 도움이 많이 됐고, 지금은 원하던 병원에서 근무 중입니다!</blockquote>
+          <div class="review-who"><strong>김민정 <span>30대</span></strong><small>미아점 수료 · 서울 대형병원 취업</small></div>
+        </li>
+        <li class="review">
+          <p class="review-stars" aria-label="별점 5점">★★★★★</p>
+          <blockquote>청량리역 바로 앞이라 강원도에서도 통학했어요. 교통이 너무 편리하고 (주)국민평생학습센터 혜택으로 추가 자격증도 저렴하게 취득할 수 있어서 정말 좋았습니다!</blockquote>
+          <div class="review-who"><strong>이수진 <span>20대</span></strong><small>청량리점 수료 · 종합병원 취업</small></div>
+        </li>
+        <li class="review">
+          <p class="review-stars" aria-label="별점 5점">★★★★★</p>
+          <blockquote>나이가 많아 걱정했는데 학원에서 나이 상관없이 모두 열심히 도와주셨어요. 4050 재취업 분위기가 좋아서 편하게 공부할 수 있었습니다. 감사합니다!</blockquote>
+          <div class="review-who"><strong>박지은 <span>40대</span></strong><small>수유점 수료 · 요양병원 근무</small></div>
+        </li>
+        <li class="review">
+          <p class="review-stars" aria-label="별점 5점">★★★★★</p>
+          <blockquote>부산에서 지혜학원이 생겨서 정말 다행이에요. 서울 본점 수준 그대로 부산에서 배울 수 있었고, 취업까지 연계해줘서 원하던 병원에 입사했습니다!</blockquote>
+          <div class="review-who"><strong>최현우 <span>20대</span></strong><small>부산점 수료 · 부산대병원 취업</small></div>
+        </li>
+        <li class="review">
+          <p class="review-stars" aria-label="별점 5점">★★★★★</p>
+          <blockquote>집에서 가까운 송내점에 등록했는데 교육 수준이 서울과 전혀 차이가 없었어요. 꼼꼼한 강사님 덕분에 단번에 합격! 지금은 집 근처 병원에 취직했어요.</blockquote>
+          <div class="review-who"><strong>정미경 <span>30대</span></strong><small>송내점 수료 · 부천 병원 취업</small></div>
+        </li>
+        <li class="review">
+          <p class="review-stars" aria-label="별점 5점">★★★★★</p>
+          <blockquote>50대에 새 출발을 결심하고 등록했어요. 처음엔 두려웠지만 선생님들이 끝까지 포기하지 않도록 응원해주셔서 새로운 직업을 갖게 됐어요. 너무 행복합니다!</blockquote>
+          <div class="review-who"><strong>강서영 <span>50대</span></strong><small>미아점 수료 · 의원 근무</small></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ 10. 상담 문의 ============
+         ※ 온라인 상담 신청 폼은 아직 받을 곳이 연결 안 됨 (기존 사이트는 고객 서버 /api/contact 로 보냈음).
+            받을 곳이 정해지면 js/main.js 의 FORM_ENDPOINT 에 주소만 넣으면 돼요. -->
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-inner">
+        <div class="contact-copy">
+          <p class="section-label">상담 문의</p>
+          <h2 id="contactTitle">지금 바로<br>무료 상담을 신청하세요</h2>
+          <p class="contact-desc">궁금한 점이 있으시면 편하게 연락 주세요.<br class="pc">
+            전문 상담사가 친절하게 안내해 드리겠습니다.</p>
+          <dl class="contact-info">
+            <div><dt>대표 전화 (365일)</dt><dd><a href="tel:02-980-1005">02-980-1005</a></dd></div>
+            <div><dt>카카오톡 채널 (365일 연중무휴)</dt><dd><a href="https://open.kakao.com/o/jihyenursing" target="_blank" rel="noopener">@지혜간호학원</a></dd></div>
+            <div><dt>운영 시간</dt><dd>평일 09:00~22:00<br>토요일 09:00~18:00</dd></div>
+          </dl>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>온라인 상담 신청</h3>
+          <p class="form-sub">전문 상담사가 24시간 내 연락드립니다.</p>
+          <label class="field">
+            <span>이름 <em aria-hidden="true">*</em></span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label class="field">
+            <span>연락처 <em aria-hidden="true">*</em></span>
+            <input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="010-0000-0000" required>
+          </label>
+          <label class="field">
+            <span>희망 지점</span>
+            <select name="branch">
+              <option value="">지점을 선택하세요</option>
+              <option>수유점 (서울 강북구)</option>
+              <option>미아점 (서울 강북구)</option>
+              <option>청량리점 (서울 동대문구)</option>
+              <option>부산점 (부산 부산진구)</option>
+              <option>송내점 (경기 부천시)</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>문의 내용</span>
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <label class="agree">
+            <input type="checkbox" name="agree" required>
+            <span>개인정보는 상담 목적으로만 사용되며 제3자에게 제공되지 않는 것에 동의합니다. <em aria-hidden="true">*</em></span>
+          </label>
+          <button class="form-submit" type="submit">무료 상담 신청하기</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ============ 11. 하단 (footer) ============
+       ※ 고객에게 받아서 바꿀 것: 사업자등록번호(지금 000-00-00000), 개인정보처리방침·이용약관 링크(지금 비어 있음) -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="footer-logo" href="#top">
+          <img src="assets/img/logo.png" alt="" width="40" height="40">
+          <strong>지혜간호학원</strong>
+        </a>
+        <p>전국 5개 지점을 운영하는 간호교육 전문기관입니다.<br>
+          체계적인 커리큘럼과 전문 강사진으로<br>합격의 꿈을 이뤄 드립니다.</p>
+        <ul class="footer-social">
+          <li><a href="https://open.kakao.com/o/jihyenursing" target="_blank" rel="noopener">카카오톡 상담</a></li>
+          <li><a href="https://blog.naver.com/jhna_cheongnyang" target="_blank" rel="noopener">네이버 블로그(청량리점)</a></li>
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="지점 안내">
+        <h2>지점 안내</h2>
+        <ul>
+          <li><a href="suyu/">수유점 <span>서울 강북구</span></a></li>
+          <li><a href="mia/">미아점 <span>서울 강북구</span></a></li>
+          <li><a href="cheongnyangni/">청량리점 <span>서울 동대문구</span></a></li>
+          <li><a href="busan/">부산점 <span>부산 부산진구</span></a></li>
+          <li><a href="songnae/">송내점 <span>경기 부천시</span></a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="바로가기">
+        <h2>바로가기</h2>
+        <ul>
+          <li><a href="#contact">무료 상담 신청</a></li>
+          <li><a href="#reviews">합격 후기</a></li>
+          <li><a href="#strengths">교육 특징</a></li>
+          <li><a href="#support">국비지원 안내</a></li>
+          <li><a href="#exam">시험과목</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2>상담 전화</h2>
+        <ul class="footer-tel">
+          <li><span>대표 전화</span><a href="tel:02-980-1005">02-980-1005</a></li>
+          <li><span>수유본점</span><a href="tel:070-4680-5511">070-4680-5511</a></li>
+        </ul>
+        <p class="footer-hours">평일 09:00~22:00<br>토요일 09:00~18:00</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-company">(주)포널스 본사 · 서울시 강북구 노해로8길 22 경남아너스 311호<span class="footer-sep" aria-hidden="true">|</span>Tel <a href="tel:02-905-9671">02-905-9671</a><span class="footer-sep" aria-hidden="true">|</span>Fax 02-905-9670<br>이널싱 본사 · 서울시 강북구 노해로8길 22 경남아너스 304호</p>
+      <p>© 2026 지혜간호학원. All rights reserved.<span class="footer-sep" aria-hidden="true">|</span>사업자등록번호 000-00-00000</p>
+      <ul>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ============ 오른쪽 떠 있는 버튼 ============ -->
+  <div class="float" aria-label="빠른 연락">
+    <a class="float-btn tel" href="tel:02-980-1005" aria-label="대표 전화 02-980-1005">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+    </a>
+    <a class="float-btn kakao" href="https://open.kakao.com/o/jihyenursing" target="_blank" rel="noopener" aria-label="카카오톡 상담">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.5 2 10.8c0 2.8 1.9 5.2 4.7 6.6l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.5 10-7.9S17.5 3 12 3z"/></svg>
+    </a>
+  </div>
+
+  <!-- 날아다니는 부엉이 (위치는 js/main.js 가 스크롤에 맞춰 정함) -->
+  <div class="owl-flyer" aria-hidden="true">
+    <span class="wing wing-l"></span><span class="wing wing-r"></span>
+    <img class="owl-bird" src="assets/img/owl-bird.png" alt="" width="240" height="240">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
