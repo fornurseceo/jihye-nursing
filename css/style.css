@@ -872,3 +872,9 @@ a.logo-tile:hover img { transform: scale(1.04); }
   .hero-photo { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* 시험과목: 시험 방식 안내 + 과목별 문항 수 */
+.exam-format { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.exam-format strong { font-size: 17px; font-weight: 800; color: var(--ink); }
+.exam-format span { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--orange); color: #fff; font-size: 13px; font-weight: 700; }
+.exam-q { margin-left: 6px; font-size: 0.72em; font-weight: 700; color: var(--orange); white-space: nowrap; vertical-align: middle; }
