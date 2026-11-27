@@ -710,6 +710,11 @@ a.logo-tile:hover img { transform: scale(1.04); }
 
 .bp-loc { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 .bp-loc-sub { margin-top: 8px; color: var(--ink-soft); font-weight: 600; }
+/* 주소를 한 줄로(PC) + 호실 안내 */
+.bp-loc h2.bp-loc-title--line { font-size: clamp(22px, 2.5vw, 40px); }
+@media (min-width: 900px) { .bp-loc-title--line { white-space: nowrap; } }
+.bp-loc-rooms { margin-top: 10px; font-size: 17px; font-weight: 700; color: var(--ink); }
+.bp-loc-rooms span { white-space: nowrap; }
 .bp-loc-actions { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
 .bp-loc-call { margin-top: 28px; display: grid; gap: 14px; }
 .bp-loc-call dt { font-size: 13px; color: var(--ink-soft); font-weight: 600; }
