@@ -731,6 +731,11 @@ a.logo-tile:hover img { transform: scale(1.04); }
 .bp-tag--event { background: var(--ink); color: #fff; }
 .bp-notices p { font-weight: 700; }
 .bp-notices time { font-size: 14px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+/* 상세 내용이 있는 공지 (예: 송내점 교습비 변경) */
+.bp-notices li.has-detail { align-items: start; }
+.bp-notice-detail { margin-top: 10px; display: grid; gap: 4px; }
+.bp-notices .bp-notice-detail li { display: block; padding: 0 0 0 12px; border: 0; position: relative; font-size: 15px; color: var(--ink-soft); }
+.bp-notices .bp-notice-detail li::before { content: "·"; position: absolute; left: 0; }
 
 .bp-others { background: var(--mist); padding: 28px 16px; }
 .bp-others .bp-inner { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
@@ -765,7 +770,7 @@ a.logo-tile:hover img { transform: scale(1.04); }
   .bp-table td::before { content: attr(data-label) " · "; color: var(--ink-soft); font-weight: 600; font-size: 14px; }
   .bp-transit > div { grid-template-columns: 1fr; gap: 2px; padding: 14px 16px; }
   .bp-notices li { grid-template-columns: 1fr auto; row-gap: 6px; }
-  .bp-notices p { grid-column: 1 / -1; grid-row: 2; }
+  .bp-notices p, .bp-notices .bp-notice-body { grid-column: 1 / -1; grid-row: 2; }
 }
 
 /* ---------- 떠 있는 버튼 ---------- */
