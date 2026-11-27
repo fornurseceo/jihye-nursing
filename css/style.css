@@ -955,3 +955,26 @@ a.logo-tile:hover img { transform: scale(1.04); }
   .site-card { padding: 20px 18px; }
 }
 @media (prefers-reduced-motion: reduce) { .site-card { transition: none; } .site-card:hover { transform: none; } }
+
+/* ---------- 2. 자체 교재 배너 (찰떡 시리즈) ---------- */
+.book-banner { padding: 48px 16px; background: #fff; }
+.book-banner-link {
+  position: relative; display: block; max-width: 1040px; margin: 0 auto;
+  border-radius: 16px; overflow: hidden; box-shadow: 0 12px 32px rgba(28,43,58,.14);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.book-banner-link img { display: block; width: 100%; height: auto; }
+.book-banner-link:hover, .book-banner-link:focus-visible { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(28,43,58,.22); }
+.book-banner-cta {
+  position: absolute; right: 16px; bottom: 16px; display: none; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: 999px; background: #E6007E; color: #fff; font-size: 14px; font-weight: 800;
+  box-shadow: 0 6px 16px rgba(230,0,126,.35);
+}
+.book-banner-cta svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+/* 휴대폰: 배너 글씨가 작아지므로 아래에 누르기 쉬운 버튼을 따로 보여줌 */
+@media (max-width: 640px) {
+  .book-banner { padding: 32px 16px; }
+  .book-banner-link { border-radius: 12px; padding-bottom: 52px; background: #FDEAF3; }
+  .book-banner-cta { display: inline-flex; left: 12px; right: 12px; bottom: 10px; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { .book-banner-link { transition: none; } .book-banner-link:hover { transform: none; } }
