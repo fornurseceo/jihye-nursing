@@ -219,13 +219,33 @@
   // 9) 상담 신청서
   //    받을 곳이 정해지면 아래 FORM_ENDPOINT 에 주소를 넣으세요(예: Formspree 주소).
   //    비어 있으면 신청이 전송되지 않고 전화·카톡 안내만 보여요.
+  //    폼에 data-kakao="카톡 주소" 가 있으면(메인·수유점) 신청 버튼이 그 카톡 오픈채팅방을 열어요.
   var FORM_ENDPOINT = '';
   var form = document.getElementById('contactForm');
   if (form) {
     var msg = form.querySelector('.form-msg');
     var say = function (text, kind) { msg.textContent = text; msg.className = 'form-msg is-' + kind; };
+    var kakaoUrl = form.getAttribute('data-kakao');   // 폼에 data-kakao 가 있으면 카톡 오픈채팅으로 연결
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (!FORM_ENDPOINT && kakaoUrl) {
+        // 신청 버튼 → 카톡 오픈채팅방 열기. 입력한 내용이 있으면 복사해 두어 카톡에 붙여넣기만 하면 되게 함
+        var labels = { name: '이름', phone: '연락처', branch: '희망 지점', course: '관심 과정', message: '문의 내용' };
+        var lines = [];
+        Object.keys(labels).forEach(function (k) {
+          var el = form.elements[k];
+          if (el && el.type !== 'hidden' && el.value.trim()) lines.push(labels[k] + ': ' + el.value.trim());
+        });
+        window.open(kakaoUrl, '_blank', 'noopener');
+        if (lines.length && navigator.clipboard) {
+          navigator.clipboard.writeText('[상담 신청]\n' + lines.join('\n')).then(function () {
+            say('카카오톡 상담방이 열렸어요. 입력하신 내용이 복사됐으니 카톡 창에 붙여넣기 해 주세요.', 'ok');
+          }, function () { say('카카오톡 상담방이 열렸어요. 궁금한 점을 남겨 주세요.', 'ok'); });
+        } else {
+          say('카카오톡 상담방이 열렸어요. 궁금한 점을 남겨 주세요.', 'ok');
+        }
+        return;
+      }
       var name = form.elements.name, phone = form.elements.phone, agree = form.elements.agree;
       [name, phone].forEach(function (el) { el.closest('.field').classList.remove('is-error'); });
       if (!name.value.trim()) { name.closest('.field').classList.add('is-error'); name.focus(); return say('이름을 입력해 주세요.', 'error'); }
