@@ -367,24 +367,32 @@
           </div>
         </div>
 
+        <div class="exam-subjects-wrap">
         <ul class="exam-subjects" aria-label="간호조무사 국가시험 4과목">
+          <!-- 과목을 누르면 아래 subjDialog1~4 팝업에 세부 출제 영역이 나와요 -->
           <li>
             <span class="exam-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5.5h6a3 3 0 0 1 3 3V20a2.5 2.5 0 0 0-2.5-2.5H3z"/><path d="M21 5.5h-6a3 3 0 0 0-3 3V20a2.5 2.5 0 0 1 2.5-2.5H21z"/></svg></span>
             <div><h3>기초간호학 개요 <span class="exam-q">35문항</span></h3><p>기본 간호 지식과 간호기술의 이해</p></div>
+            <button class="exam-more" type="button" data-dialog-open="subjDialog1" aria-label="기초간호학 개요 출제 영역 보기"><span>출제 영역</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
           </li>
           <li>
             <span class="exam-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 9a5 5 0 0 0-8.5-3.5A5 5 0 0 0 3.5 9c0 5.5 8.5 11 8.5 11s8.5-5.5 8.5-11z"/><path d="M5 12h3.5l1.5-2.5 2.5 5 1.5-2.5H19"/></svg></span>
             <div><h3>보건간호학 개요 <span class="exam-q">15문항</span></h3><p>지역사회 보건간호 및 건강관리</p></div>
+            <button class="exam-more" type="button" data-dialog-open="subjDialog2" aria-label="보건간호학 개요 출제 영역 보기"><span>출제 영역</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
           </li>
           <li>
             <span class="exam-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 9v6M9 12h6"/></svg></span>
             <div><h3>공중보건학 개론 <span class="exam-q">20문항</span></h3><p>공중보건 개념 및 보건행정 이해</p></div>
+            <button class="exam-more" type="button" data-dialog-open="subjDialog3" aria-label="공중보건학 개론 출제 영역 보기"><span>출제 영역</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
           </li>
           <li>
             <span class="exam-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 3.5h6v3H9zM8.5 11h7M8.5 15h4.5"/></svg></span>
             <div><h3>실기 <span class="exam-q">35문항</span></h3><p>병원 실무 중심의 간호 실습</p></div>
+            <button class="exam-more" type="button" data-dialog-open="subjDialog4" aria-label="실기 출제 영역 보기"><span>출제 영역</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
           </li>
         </ul>
+        <p class="exam-hint">과목을 누르면 세부 출제 영역을 볼 수 있어요.</p>
+        </div>
       </div>
 
       <dialog class="exam-dialog" id="examDialog" aria-labelledby="examDialogTitle">
@@ -394,6 +402,85 @@
         </div>
         <div class="exam-dialog-body">
           <img src="assets/img/exam-schedule.jpg" alt="간호조무사 국가시험 일정, 시험과목, 시험시간표, 합격기준 안내표" loading="lazy" width="1080" height="2198">
+        </div>
+      </dialog>
+
+      <!-- 과목별 세부 출제 영역 팝업 (내용 고칠 때: 아래 표의 글자만 바꾸면 돼요) -->
+      <dialog class="exam-dialog subj-dialog" id="subjDialog1" aria-labelledby="subjTitle1">
+        <div class="exam-dialog-head">
+          <h3 id="subjTitle1"><span class="subj-step">1과목</span>기초간호학 개요 <span class="exam-q">35문항</span></h3>
+          <button type="button" data-dialog-close aria-label="닫기">닫기</button>
+        </div>
+        <div class="exam-dialog-body">
+          <p class="subj-lead">세부 출제 영역 <strong>12개 분야</strong></p>
+          <ol class="subj-areas">
+            <li><span class="subj-no">01</span><b>간호관리</b><p>직업윤리, 법 및 안전관리, 자기개발·업무관리</p></li>
+            <li><span class="subj-no">02</span><b>기초해부생리</b><p>인체 구조와 기능</p></li>
+            <li><span class="subj-no">03</span><b>기초약리</b><p>기본개념, 약물의 관리</p></li>
+            <li><span class="subj-no">04</span><b>기초영양</b><p>기본개념, 영양과 질환</p></li>
+            <li><span class="subj-no">05</span><b>기초치과</b><p>기본개념, 치과 업무보조</p></li>
+            <li><span class="subj-no">06</span><b>기초한방</b><p>기본개념, 한의 업무보조</p></li>
+            <li><span class="subj-no">07</span><b>기본간호</b><p>기본개념, 환자 업무보조</p></li>
+            <li><span class="subj-no">08</span><b>성인 관련 간호</b><p>호흡·순환·소화·신경·감각계 등 주요 신체계통 간호</p></li>
+            <li><span class="subj-no">09</span><b>모성 관련 간호</b><p>임신, 출산 간호</p></li>
+            <li><span class="subj-no">10</span><b>아동 관련 간호</b><p>아동 발달단계, 건강문제</p></li>
+            <li><span class="subj-no">11</span><b>노인 관련 간호</b><p>노인의 질환, 건강관리</p></li>
+            <li><span class="subj-no">12</span><b>응급 관련 간호</b><p>응급처치 및 대처</p></li>
+          </ol>
+        </div>
+      </dialog>
+      <dialog class="exam-dialog subj-dialog" id="subjDialog2" aria-labelledby="subjTitle2">
+        <div class="exam-dialog-head">
+          <h3 id="subjTitle2"><span class="subj-step">2과목</span>보건간호학 개요 <span class="exam-q">15문항</span></h3>
+          <button type="button" data-dialog-close aria-label="닫기">닫기</button>
+        </div>
+        <div class="exam-dialog-body">
+          <p class="subj-lead">세부 출제 영역 <strong>4개 분야</strong></p>
+          <ol class="subj-areas">
+            <li><span class="subj-no">01</span><b>보건교육</b><p>보건교육의 이해, 실시</p></li>
+            <li><span class="subj-no">02</span><b>보건행정</b><p>보건조직, 의료체계, 사회·의료보장, 노인장기요양보험</p></li>
+            <li><span class="subj-no">03</span><b>환경보건</b><p>환경정책 이해, 환경과 건강(생활환경·물·식품·폐기물)</p></li>
+            <li><span class="subj-no">04</span><b>산업보건</b><p>산업장 건강문제</p></li>
+          </ol>
+        </div>
+      </dialog>
+      <dialog class="exam-dialog subj-dialog" id="subjDialog3" aria-labelledby="subjTitle3">
+        <div class="exam-dialog-head">
+          <h3 id="subjTitle3"><span class="subj-step">3과목</span>공중보건학 개론 <span class="exam-q">20문항</span></h3>
+          <button type="button" data-dialog-close aria-label="닫기">닫기</button>
+        </div>
+        <div class="exam-dialog-body">
+          <p class="subj-lead">세부 출제 영역 <strong>5개 분야</strong></p>
+          <ol class="subj-areas">
+            <li><span class="subj-no">01</span><b>질병관리사업</b><p>질병발생 역학, 감염성 질환 관리</p></li>
+            <li><span class="subj-no">02</span><b>인구와 출산</b><p>인구 이해 및 정책</p></li>
+            <li><span class="subj-no">03</span><b>모자보건</b><p>모성 및 영유아 보건</p></li>
+            <li><span class="subj-no">04</span><b>지역사회보건</b><p>건강증진 정책, 노인보건, 방문·가족보건</p></li>
+            <li><span class="subj-no">05</span><b>의료관계법규</b><p>의료법, 정신건강복지법, 결핵·구강보건·혈액관리·감염병 예방법, <mark>간호법</mark> <em class="subj-new">2026년 추가</em></p></li>
+          </ol>
+        </div>
+      </dialog>
+      <dialog class="exam-dialog subj-dialog" id="subjDialog4" aria-labelledby="subjTitle4">
+        <div class="exam-dialog-head">
+          <h3 id="subjTitle4"><span class="subj-step">4과목</span>실기 <span class="exam-q">35문항</span></h3>
+          <button type="button" data-dialog-close aria-label="닫기">닫기</button>
+        </div>
+        <div class="exam-dialog-body">
+          <p class="subj-lead">세부 출제 영역 <strong>12개 분야</strong></p>
+          <ol class="subj-areas">
+            <li><span class="subj-no">01</span><b>활력징후</b><p>맥박·호흡·체온·혈압·산소포화도 측정 보조</p></li>
+            <li><span class="subj-no">02</span><b>감염관리</b><p>격리지침, 소독·멸균, 무균술</p></li>
+            <li><span class="subj-no">03</span><b>호흡유지</b><p>산소·흉부물리·분무요법 보조, 흡인 및 기관절개관 간호</p></li>
+            <li><span class="subj-no">04</span><b>영양·배설</b><p>식사 돕기, 위관영양, 배뇨·배변 간호, 섭취·배설량 측정</p></li>
+            <li><span class="subj-no">05</span><b>상처·골절</b><p>상처·욕창·골절 간호 보조</p></li>
+            <li><span class="subj-no">06</span><b>개인위생</b><p>목욕·등마사지 돕기, 부위별 위생 간호</p></li>
+            <li><span class="subj-no">07</span><b>활동관리</b><p>체위·운동·이동·보행 돕기, 의복·보호대 관리</p></li>
+            <li><span class="subj-no">08</span><b>체온유지</b><p>냉·온요법 돕기</p></li>
+            <li><span class="subj-no">09</span><b>진단검사·수술</b><p>검사 보조, 수술 간호 보조</p></li>
+            <li><span class="subj-no">10</span><b>기도폐쇄·심정지 대처</b><p>응급 대처(기도폐쇄, 심정지)</p></li>
+            <li><span class="subj-no">11</span><b>환자관리·의사소통</b><p>입퇴원·전동 관리, 의사소통 기법</p></li>
+            <li><span class="subj-no">12</span><b>임종간호</b><p>임종 간호 보조</p></li>
+          </ol>
         </div>
       </dialog>
     </section>

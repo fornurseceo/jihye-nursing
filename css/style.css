@@ -878,3 +878,41 @@ a.logo-tile:hover img { transform: scale(1.04); }
 .exam-format strong { font-size: 17px; font-weight: 800; color: var(--ink); }
 .exam-format span { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--orange); color: #fff; font-size: 13px; font-weight: 700; }
 .exam-q { margin-left: 6px; font-size: 0.72em; font-weight: 700; color: var(--orange); white-space: nowrap; vertical-align: middle; }
+
+/* 시험과목: 과목별 "출제 영역" 버튼 + 팝업 */
+.exam-subjects li { position: relative; }
+.exam-subjects li > div { flex: 1; min-width: 0; }
+.exam-more {
+  flex: none; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+  padding: 8px 12px 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: #fff;
+  font: inherit; font-size: 14px; font-weight: 700; color: var(--ink); transition: background .2s, color .2s, border-color .2s;
+}
+.exam-more::after { content: ""; position: absolute; inset: 0; }   /* 줄 전체를 눌러도 열림 */
+.exam-more svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
+.exam-subjects li:hover .exam-more, .exam-more:focus-visible { background: var(--orange); border-color: var(--orange); color: #fff; }
+.exam-subjects li:hover { background: #FFFBF5; }
+.subj-dialog .exam-dialog-head h3 { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px; font-size: 20px; }
+.subj-step { padding: 3px 9px; border-radius: 999px; background: var(--ink); color: #fff; font-size: 12px; font-weight: 700; }
+.subj-dialog .exam-q { margin-left: 0; font-size: 15px; }
+.subj-dialog .exam-dialog-body { padding: 20px 24px 28px; }
+.subj-lead { font-size: 15px; color: var(--ink-soft); }
+.subj-lead strong { color: var(--ink); }
+.subj-areas { margin-top: 12px; border-top: 2px solid var(--ink); }
+.subj-areas li {
+  display: grid; grid-template-columns: 40px 170px 1fr; align-items: center; gap: 12px;
+  padding: 14px 4px; border-bottom: 1px solid var(--line);
+}
+.subj-no { font-size: 13px; font-weight: 800; color: var(--orange); font-variant-numeric: tabular-nums; }
+.subj-areas b { font-size: 16px; font-weight: 800; color: var(--ink); }
+.subj-areas p { font-size: 15px; color: var(--ink-soft); line-height: 1.55; }
+.subj-areas mark { background: none; color: #D62828; font-weight: 800; }
+.subj-new { margin-left: 4px; padding: 2px 7px; border-radius: 4px; background: #FDECEC; color: #D62828; font-size: 12px; font-style: normal; font-weight: 700; white-space: nowrap; }
+@media (max-width: 640px) {
+  .exam-more span { display: none; }
+  .exam-more { padding: 8px; }
+  .subj-dialog .exam-dialog-body { padding: 16px 16px 24px; }
+  .subj-areas li { grid-template-columns: 30px 1fr; row-gap: 2px; }
+  .subj-areas p { grid-column: 2; }
+}
+.exam-hint { margin-top: 12px; font-size: 14px; color: var(--ink-soft); text-align: right; }
+.exam-hint::before { content: "↑ "; color: var(--orange); font-weight: 800; }
