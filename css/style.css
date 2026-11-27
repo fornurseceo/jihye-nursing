@@ -473,7 +473,7 @@ a.logo-tile:hover img { transform: scale(1.04); }
 .section-label { font-size: 15px; font-weight: 700; color: var(--orange-text); }
 
 /* ---------- 5. 국비지원 안내 (내일배움카드) ---------- */
-.support { padding: 104px 16px 112px; background: var(--mist); }
+.support { padding: 80px 16px 88px; background: var(--mist); }
 .support-inner {
   max-width: var(--max); margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
@@ -916,3 +916,42 @@ a.logo-tile:hover img { transform: scale(1.04); }
 }
 .exam-hint { margin-top: 12px; font-size: 14px; color: var(--ink-soft); text-align: right; }
 .exam-hint::before { content: "↑ "; color: var(--orange); font-weight: 800; }
+
+/* ---------- 4-2. 꼭 알아두면 좋은 사이트 (가로 4개 카드) ---------- */
+.sites { padding: 88px 16px 96px; background: var(--ink); color: #fff; }
+.sites-inner { max-width: var(--max); margin: 0 auto; }
+.sites-head .section-label { color: var(--orange); }
+.sites-head h2 { margin-top: 6px; font-size: clamp(28px, 3.2vw, 40px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.25; }
+.sites-desc { margin-top: 12px; color: rgba(255,255,255,.72); }
+.sites-list { margin-top: 36px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.sites-list > li { display: flex; }
+.site-card {
+  position: relative; display: flex; flex-direction: column; width: 100%;
+  padding: 24px 22px 22px; border-radius: 12px; background: #fff; color: var(--ink); text-decoration: none;
+  border-top: 4px solid var(--orange); box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.site-card:hover, .site-card:focus-visible { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,.28); }
+.site-top { display: flex; align-items: center; justify-content: space-between; }
+.site-no { font-size: 14px; font-weight: 800; color: var(--orange-text); font-variant-numeric: tabular-nums; letter-spacing: .04em; }
+.site-icon { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: #FFF3E3; }
+.site-icon svg { width: 24px; height: 24px; fill: none; stroke: var(--orange-text); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.site-name { margin-top: 18px; font-size: 19px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.35; word-break: keep-all; }
+.site-sub { margin-top: 2px; font-size: 13px; font-weight: 700; color: var(--ink-soft); letter-spacing: .02em; }
+.site-points { margin: 16px 0 20px; padding-top: 14px; border-top: 1px solid var(--line); display: grid; gap: 6px; }
+.site-points li { position: relative; padding-left: 14px; font-size: 14.5px; color: var(--ink-soft); line-height: 1.5; word-break: keep-all; }
+.site-points li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--orange); }
+.site-go {
+  margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 14px; border-radius: 999px; background: var(--ink); color: #fff; font-size: 14px; font-weight: 700;
+  transition: background .2s;
+}
+.site-go svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.site-card:hover .site-go, .site-card:focus-visible .site-go { background: var(--orange); }
+@media (max-width: 1024px) { .sites-list { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) {
+  .sites { padding: 64px 16px 72px; }
+  .sites-list { grid-template-columns: 1fr; gap: 12px; }
+  .site-card { padding: 20px 18px; }
+}
+@media (prefers-reduced-motion: reduce) { .site-card { transition: none; } .site-card:hover { transform: none; } }
